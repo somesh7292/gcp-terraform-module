@@ -37,7 +37,7 @@ resource "google_cloudfunctions2_function" "function" {
     available_memory    = var.available_memory
     timeout_seconds     = var.timeout_seconds
     ingress_settings   = var.ingress_settings
-    service_account_email = "cloud-function@adt-test-dev-f5e695.iam.gserviceaccount.com"
+    service_account_email = var.service_account_email
     secret_environment_variables {
       project_id = var.project_id
       key        = var.key

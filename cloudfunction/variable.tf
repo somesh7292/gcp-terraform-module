@@ -67,3 +67,7 @@ variable "secret_id" {
 variable "secret_key_trigger" {
   description = "Version of a secret"
 }
+
+variable "service_account_email" {
+  description = "service account emial"
+}
